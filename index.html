@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D3 London Cartogram</title>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="build/d3-londoncarto.js"></script>
+</head>
+<body>
+<h1>D3 London Cartogram</h1>
+<div class="carto" data-src="testdata/census-historic-population-borough.csv"></div>
+</body>
+<script type="text/javascript">
+	var layout = d3.londonCarto()
+		.boroughAccessor(function(d){
+			return d['Area Code'];
+		});
+
+	d3.selectAll('.carto')
+		.each(function(){
+			console.log(this.dataset.src)
+		})
+
+</script>
+</html>
