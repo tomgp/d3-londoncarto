@@ -1,5 +1,9 @@
 # d3-londoncarto
 
+NOTE: this is no longer supported. Please consider the <a href="https://www.github.com/aftertheflood/londonsquared">London Squared</a> D3 plugin for your London cartogram needs .
+
+---
+
 YOUR DESCRIPTION HERE. Replace all instances of `londoncarto` in this file with the name of your new plugin.
 
 ## Installing
